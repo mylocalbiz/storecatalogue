@@ -1,0 +1,150 @@
+
+body { background-color: #ffffff; }
+
+/*.navbar-brand:hover {
+  color: #f8d74e !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8d74e !important;
+  color: #152990 !important;
+  border-color: #f8d74e !important;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+body.offcanvas-open {
+  padding-right: 0 !important;
+}*/
+
+
+/* ========================================================================== */
+.navbar-brand span {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #f1f1f1 !important;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #f8d74e !important;
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dropdown-item:hover {
+  background-color: #152990;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+.card-img-container img {
+    border-radius: 0px;
+
+}
+
+.product-card-link .card {
+    border: none;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-link:hover .card-title {
+    color: #002ba0;
+}
+
+label .form-label {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+
+/* Your existing CSS styles here */
+        
+
+        
+        
+        .product-card-link:hover .card {
+            /*transform: translateY(-5px);
+            box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,.175)!important;*/
+        }
+        
+        /* New CSS for filter sidebar */
+        @media (min-width: 992px) {
+            .filter-sidebar {
+                position: sticky;
+                top: 80px; /* Adjust based on navbar height */
+                height: calc(100vh - 100px);
+                overflow-y: auto;
+            }
+        }
+
+        /* --- NEW BADGE STYLING --- */
+        .card-img-container {
+            position: relative; /* Crucial for absolute positioning of badges */
+            overflow: hidden; /* Ensures badges don't overflow image corners */
+            height: auto;
+            background-color: #dc3545;
+        }
+
+        .product-badge {
+            position: absolute;
+            padding: 0.50rem 0.50rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border-radius: 0rem;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            line-height: 1; 
+            margin: 0.5rem; /* Consistent spacing from edges */
+        }
+
+        /* Top-Left Badges (On Sale, Out of Stock) */
+        .on-sale-badge, .out-of-stock-badge {
+            top: 0;
+            left: 0;
+        }
+        
+        .on-sale-badge {
+            background-color: #dc3545; /* Red (danger) for On Sale */
+        }
+        
+        .out-of-stock-badge {
+            background-color: #1a1a1a; /* Grey (secondary) for Out of Stock */
+        }
+
+        /* Top-Right Badge (Generic Tag) */
+        .tag-badge {
+            top: 0;
+            right: 0;
+            background-color: #ff8800; /* Blue (primary) for Tag */
+        }
+        /* --- END BADGE STYLING --- */
+
+        .filter-sidebar {
+            /*background-color: #F6F6F6;*/
+            border-radius: 1em;
+        }
